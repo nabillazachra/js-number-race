@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Number Series App - Weekly</title>
+	<link rel="shortcut icon" href="https://avatars3.githubusercontent.com/u/34464790?s=220&v=4">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="first">
+			<h1>Asynchronous and Synchronous</h1>
+			<form id="form">
+				<div class="operand1">
+					<label for="operand-1">Number</label>
+					<input type="number" name="operand-1" id="operand-1" placeholder="Input Number Here" required>
+				</div>
+				<div class="button">
+					<button class="odd" id="synchronous" onclick="calculator(event, 'synchronous')">Synchronous</button>
+					<button class="even" id="asynchronous" onclick="calculator(event, 'asynchronous')">Asynchronous</button>
+					<button type="reset" class="reset">Reset</button>
+				</div>
+			</form>
+		</div>
+		<div class="second">
+			<div class="result card">
+				<h1>RESULT</h1>
+			<div class="position">
+				<div>Ganjil: <span id="ganjil-display"></span></div>
+				<div>Genap: <span id="genap-display"></span></div>
+			</div>
+			</div>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
